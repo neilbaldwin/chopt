@@ -72,9 +72,9 @@ chopt.sh -i "BD Chain 01.wav" -m 0.1
 
 **`-t `Threshold**
 
-This specifies the amplitude in dB at which CHOPT (SoX) determines that a sound has decayed to silence. Higher values will result in low-level portions of transients being truncated too quickly. Lower values will result in less 'silence' removal from the source material.
+This specifies the amplitude (as a percentage, 0.0 being silence) at which CHOPT (SoX) determines that a sound has decayed to silence. Higher values will result in low-level portions of transients being truncated too quickly. Lower values will result in less 'silence' removal from the source material.
 
-Default value is 0.5 (dB).
+Default value is 0.5 (%).
 
 ```
 chopt.sh -i "BD Chain 01.wav" -t 0.5
